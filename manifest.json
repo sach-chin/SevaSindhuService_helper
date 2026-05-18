@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "GovBridge – Seva Sindhu Helper",
+  "version": "4.0.0",
+  "description": "Bilingual login helper for Seva Sindhu portal – switch between Kannada and English",
+  "author": "Zen Citizen",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sevasindhuservices.karnataka.gov.in/",
+        "https://sevasindhuservices.karnataka.gov.in/index.html",
+        "https://sevasindhuservices.karnataka.gov.in/login.do",
+        "https://sevasindhuservices.karnataka.gov.in/renderApplicationForm.do",
+        "https://sevasindhuservices.karnataka.gov.in/beneficiaryPrimaryServiceList.do",
+        "https://sevasindhuservices.karnataka.gov.in/home.do"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "src/core/state.js",
+        "src/core/dictionary.js",
+        "src/core/formDetector.js",
+        "src/utils/dom.js",
+        "src/components/langBar.js",
+        "src/forms/loginForm.js",
+        "src/forms/statusForm.js",
+        "src/forms/newConnectionGESCOM.js",
+        "src/main.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}

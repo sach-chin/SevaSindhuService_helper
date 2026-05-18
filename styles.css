@@ -1,0 +1,243 @@
+/* ══════════════════════════════════════════════
+   GovBridge – Seva Sindhu Login Helper v4.0
+   Premium Bilingual Styles
+   ══════════════════════════════════════════════ */
+
+/* ── Language Toggle Bar ── */
+#gg-lang-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+  padding: 6px 16px;
+  background: transparent;
+  box-shadow: none;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  pointer-events: none;
+}
+
+#gg-lang-bar>* {
+  pointer-events: auto;
+}
+
+#gg-lang-bar .gg-lang-btn {
+  padding: 6px 18px;
+  border: 1.5px solid #0056b3;
+  background: white;
+  color: #0056b3;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+
+#gg-lang-bar .gg-lang-btn:first-of-type {
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+}
+
+#gg-lang-bar .gg-lang-btn:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+
+#gg-lang-bar .gg-lang-btn.gg-lang-active {
+  background: #0056b3;
+  color: white;
+  font-weight: 700;
+  border-color: #0056b3;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+#gg-lang-bar .gg-lang-btn:hover:not(.gg-lang-active) {
+  background: #f0f8ff;
+}
+
+/* ── Login Method Toggle ── */
+#gg-method-toggle {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f8ff 100%);
+  border: 1px solid #99c2ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+#gg-method-toggle .gg-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 6px;
+}
+
+#gg-method-toggle .gg-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#gg-method-toggle .gg-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 6px;
+  border: 1.5px solid #99c2ff;
+  border-radius: 6px;
+  background: white;
+  font-size: 12px;
+  white-space: nowrap;
+  font-family: inherit;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#gg-method-toggle .gg-btn:hover {
+  background: #f0f8ff;
+  border-color: #0056b3;
+}
+
+#gg-method-toggle .gg-btn.gg-active {
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+  color: white;
+  border-color: #0056b3;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 86, 179, 0.3);
+}
+
+/* ── CAPTCHA Helper ── */
+#gg-captcha-helper {
+  background: linear-gradient(135deg, #e8f4fd 0%, #f0f8ff 100%);
+  border: 1px solid #99c2ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 12px;
+  color: #0056b3;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+#gg-captcha-helper .gg-cap-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+#gg-captcha-helper .gg-pairs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#gg-captcha-helper .gg-pair {
+  background: white;
+  border: 1px solid #99c2ff;
+  border-radius: 4px;
+  padding: 3px 9px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+#gg-captcha-helper .gg-cap-hint {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #0056b3;
+  text-align: center;
+}
+
+/* ── Eye Toggle ── */
+#gg-eye-btn {
+  background: #e9ecef;
+  border: none;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  width: 46px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #333;
+  vertical-align: middle;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: all 0.2s;
+}
+
+#gg-eye-btn:hover {
+  background: #dee2e6;
+  color: #000;
+}
+
+/* Hide native Edge/Windows reveal password icon to prevent double icons */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+.input-group:has(#password) {
+  display: flex !important;
+  align-items: stretch !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#password {
+  border: none !important;
+  flex: 1;
+  padding-right: 10px;
+}
+
+/* ── Bilingual Label Badges ── */
+.gg-bilingual-badge {
+  display: inline-block;
+  font-size: 11px;
+  color: #0056b3;
+  background: #e8f4fd;
+  border: 1px solid #99c2ff;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  font-weight: 500;
+  vertical-align: middle;
+  letter-spacing: 0.2px;
+}
+/* ── Heading Compression ── */
+[data-gg-role="gg-apply-heading"],
+[data-gg-role="gg-status-heading"] {
+  margin-top: 4px !important;
+  margin-bottom: 8px !important;
+}
+
+#gg-method-toggle {
+  margin-top: 4px !important;
+}
