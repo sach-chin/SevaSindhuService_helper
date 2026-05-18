@@ -92,7 +92,8 @@ Before you start, please:
 
 ### For Developers
 
-> Developer repo and remote URL will be added later. Fill repository details here when available.
+Clone this repo
+https://github.com/sachin2003sacchu/SevaSindhuService_helper
 
 1. Create a virtual environment (optional but recommended):
    ```bash
